@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical"
+    tools:context=".NivelesColores.ColoresNivelDosActivity">
+
+    <TextView
+        android:id="@+id/tevi1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cardview_light_background"
+        android:text="CORRECTAS: 10"
+        android:paddingTop="8dp"
+        android:paddingLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/tevi2_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cardview_light_background"
+        android:text="NO TAN CORRECTAS:"
+        android:paddingLeft="16dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv1_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="16dp">
+
+        <ImageView
+            android:id="@+id/iv1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="click2"
+            app:srcCompat="@drawable/pelotaamarilla" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv2_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="16dp">
+
+        <ImageView
+            android:id="@+id/iv2_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/pelotaazul"
+            android:onClick="click2"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv3_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="16dp">
+
+        <ImageView
+            android:id="@+id/iv3_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/pelotaroja"
+            android:onClick="click2"/>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
